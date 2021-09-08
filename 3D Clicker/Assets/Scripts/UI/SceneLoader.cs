@@ -37,4 +37,5 @@ public class SceneLoader : MonoBehaviour
     {
         _restartButton.gameObject.SetActive(true);
     }
+
 }

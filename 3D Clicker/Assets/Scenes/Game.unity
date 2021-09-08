@@ -853,7 +853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &829868141
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1005,7 +1005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2b05c01f86f465540aef8d5d64b88a27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.422
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2b05c01f86f465540aef8d5d64b88a27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3030,7 +3030,8 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8749528222324626999, guid: 79fef2e19648d7648b9db62a1cd7b80f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 79fef2e19648d7648b9db62a1cd7b80f, type: 3}
 --- !u!1001 &1976406472
 PrefabInstance:
@@ -3226,7 +3227,6 @@ MonoBehaviour:
   _enemiesPrefabs:
   - {fileID: 568392823918431469, guid: 183f626f38eb0bb47a03340b788f79d2, type: 3}
   - {fileID: 568392823918431469, guid: ac2e43e5b2494d349a09cf106f142ca4, type: 3}
-  _secondsPerSpawn: 1
 --- !u!1 &2109951545
 GameObject:
   m_ObjectHideFlags: 0

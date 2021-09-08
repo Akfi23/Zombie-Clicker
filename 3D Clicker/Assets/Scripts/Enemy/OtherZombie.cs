@@ -11,7 +11,7 @@ public class OtherZombie : Enemy
         _NewEffect.Play();
     }
 
-    protected void Start()
+    private void Start()
     {
        _NewEffect= CreateEffect();
        _NewEffect.Play();
@@ -27,7 +27,7 @@ public class OtherZombie : Enemy
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.TryGetComponent<WeaponThrower>(out WeaponThrower weapon)) 
+        if(other.gameObject.TryGetComponent<Axe>(out Axe axe)) 
         {
             Die();
         }

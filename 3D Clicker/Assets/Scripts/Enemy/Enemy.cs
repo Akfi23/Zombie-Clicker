@@ -19,5 +19,10 @@ public class Enemy : MonoBehaviour
     {
         ParticleSystem newEffect = Instantiate(_effect, this.transform);
         return newEffect;
-    }    
+    }
+    
+    protected void TakeDamage() 
+    {
+        
+    }
 }

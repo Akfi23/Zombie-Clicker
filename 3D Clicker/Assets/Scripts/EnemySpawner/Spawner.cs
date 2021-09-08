@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : ObjectPool
 {
-    [SerializeField] private float _secondsPerSpawn;
+    private float _secondsPerSpawn;
     private float _currentTimer = 0;
 
     private void Start()

@@ -10,8 +10,8 @@ public class UltButton : MonoBehaviour
     [SerializeField] Button _button;
     [SerializeField] Axe _axe;
     private float nextValue;
-    float elapsed;
-    bool isCooldown;
+    private float elapsed;
+    private bool isCooldown;
     private void Awake()
     {
         _ultImage = GetComponent<Image>();

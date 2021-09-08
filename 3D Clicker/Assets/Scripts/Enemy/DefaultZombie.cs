@@ -11,7 +11,7 @@ public class DefaultZombie : Enemy
         _NewEffect.Play();
     }
 
-    protected void Start()
+    private void Start()
     {
         _NewEffect = CreateEffect();
         _NewEffect.Play();
@@ -20,5 +20,13 @@ public class DefaultZombie : Enemy
     private void OnMouseDown()
     {
         Die();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.TryGetComponent<Axe>(out Axe axe))
+        {
+            Die();
+        }
     }
 }
